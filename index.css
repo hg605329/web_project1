@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li{
+    list-style: none;
+}
+
+#header{
+    background: white;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 990;
+}
+
+#header .row{
+    padding: 30px 40px 0;
+    text-align: center;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header .logo{
+    margin: 0 auto;
+}
+
+.row .logo{
+    display: inline-block;
+    width: 230px;
+    height: 50px;
+    background-image: url(img/로고4.jpg);
+    background-size: 230px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.logo-f{
+    font-size: 50px;
+    position: absolute;
+    left: -1000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* 왼쪽 카테고리 */
+
+#header .nav{
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    display: table;
+    table-layout: fixed;
+}
+
+#header .nav .category{
+    position: relative;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.category .submenu{
+    display: none;
+    background: white;
+    margin-top: 19px;
+    font-size: 0.7em;
+    text-align: left;
+}
+
+.category .submenu a{
+    display: block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.category .submenu a::after{
+    content: '';
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.category .submenu a:hover{
+    color: white;
+    background: #87490cff;
+    transition: all 0.3s;
+}
+
+.category .c-btn:hover .submenu{
+    display: block;
+}
+
+/* 오른쪽 메뉴 */
+#header .states{
+    position: absolute;
+    top: 44px;
+    right: 200px;
+}
+
+#header .states a{
+    position: relative;
+    display: inline-block;
+    margin-left: 24px;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #333;
+    background: none;
+    padding: 0;
+}
+
+.search-txt{
+    border: none;
+}
+
+
+/* 상단배너 */
+
+.main_benner{
+    margin: 0 auto;
+    position: relative;
+    margin-left: 20px;
+    height: 450px;
+    right: 20px;
+}
+.main_bg{
+    position: absolute;
+    display: block;
+    top: 20%;
+}
+
+.main-benner_nails{
+    position: absolute;
+    right: 10%; top: 45%;
+}
+.main-benner_nails img{
+    display: block; /* 이미지 사이 여백없애기 */
+}
+
+.main-benner_nails img:hover{
+    border: 1px solid #87490cff;
+}
+.b-2:hover .img-2{
+    left: 50%;
+}
+
+
+
+/* best-wrap */
+.best-wrap{
+    margin-top: 30%;
+    position: absolute;
+    left: 27%;
+}
+figure{
+    bottom: 50%;
+    border: 1px solid #333;
+    width: 763px;
+    height: 470px;
+}
+figure img{
+    display:block;
+}
