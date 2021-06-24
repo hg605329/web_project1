@@ -155,16 +155,26 @@ ul, li{
 
 /* best-wrap */
 .best-wrap{
-    margin-top: 30%;
-    position: absolute;
-    left: 27%;
+    margin-top: 25%;
+    position: relative;
+    left: 30%;
 }
 figure{
-    bottom: 50%;
+    position: absolute;
+    display:block;
     border: 1px solid #333;
     width: 763px;
     height: 470px;
 }
-figure img{
-    display:block;
+figure img{}
+
+
+/* recommend */
+.rec-wrap{
+    background:rgb(223, 223, 223);
+}
+.rec{
+    margin-top: 50%;
+    position: relative;
+    left: 30%;
 }
