@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li{
+    list-style: none;
+}
+
+#header{
+    background: white;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 990;
+}
+
+#header .row{
+    padding: 30px 40px 0;
+    text-align: center;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header .logo{
+    margin: 0 auto;
+}
+
+.row .logo{
+    display: inline-block;
+    width: 230px;
+    height: 50px;
+    background-image: url(img/로고4.jpg);
+    background-size: 230px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.logo-f{
+    font-size: 50px;
+    position: absolute;
+    left: -1000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* 왼쪽 카테고리 */
+
+#header .nav{
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    display: table;
+    table-layout: fixed;
+}
+
+#header .nav .category{
+    position: relative;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.category .submenu{
+    display: none;
+    background: white;
+    margin-top: 19px;
+    font-size: 0.7em;
+    text-align: left;
+}
+
+.category .submenu a{
+    display: block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.category .submenu a::after{
+    content: '';
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.category .submenu a:hover{
+    color: white;
+    background: #87490cff;
+    transition: all 0.3s;
+}
+
+.category .c-btn:hover .submenu{
+    display: block;
+}
+
+/* 오른쪽 메뉴 */
+#header .states{
+    position: absolute;
+    top: 44px;
+    right: 200px;
+}
+
+#header .states a{
+    position: relative;
+    display: inline-block;
+    margin-left: 24px;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #333;
+    background: none;
+    padding: 0;
+}
+.search-txt{
+    border: none;
+}
+
+
+
+
+.page-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-container{
+    width:300px;
+    height: 400px;
+    display: flex;
+}
+
+.login-form-left-side{
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    padding:40px;
+}
+
+.login-input-container{
+    padding-top:50px;
+    width:300px;
+}
+.login-input-container .login-input-wrap{
+    width:300px;
+    height: 45px;
+    margin-top: 20px;
+    border-radius: 2px;
+    border-bottom: solid 2px #000;
+}
+
+.login-input-container .login-input-wrap input{
+    background: none;
+    border: none;
+    line-height: 45px;
+    padding-left:10px;
+    width:267px;
+}
+
+
+.login-btn-wrap{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+.login-btn-wrap .login-btn{
+    width:95px;
+    height:35px;
+    color:white;
+    border: 0;
+    background: black;
+}
+
+.login-form-right-side{
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    padding:40px;
+}
