@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+}
+
+ul, li{
+    list-style: none;
+}
+
+#header{
+    z-index: 9999;
+    background: white;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    width: 100%;
+    height: 90px;
+}
+
+#header .row{
+    width: 100%;
+    padding: 30px 10px 0;
+    text-align: center;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header .logo{
+    margin: 0 auto;
+}
+
+.row .logo{
+    display: inline-block;
+    width: 230px;
+    height: 50px;
+    background-image: url(img/로고4.jpg);
+    background-size: 230px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.logo-f{
+    font-size: 50px;
+    position: absolute;
+    left: -1000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* 왼쪽 카테고리 */
+
+#header .nav{
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    display: table;
+    table-layout: fixed;
+}
+
+#header .nav .category{
+    position: relative;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.category .submenu{
+    display: none;
+    background: white;
+    margin-top: 19px;
+    font-size: 0.7em;
+    text-align: left;
+}
+
+.category .submenu a{
+    display: block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.category .submenu a::after{
+    content: '';
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.category .submenu a:hover{
+    color: white;
+    background: #87490cff;
+    transition: all 0.3s;
+}
+
+.category .c-btn:hover .submenu{
+    display: block;
+}
+
+/* 오른쪽 메뉴 */
+#header .states{
+    position: absolute;
+    top: 44px;
+    right: 200px;
+}
+
+#header .states a{
+    position: relative;
+    display: inline-block;
+    margin-left: 24px;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #333;
+    background: none;
+    padding: 0;
+}
+
+.search-txt{
+    border: none;
+}
+
+
+/* 상단배너 */
+
+.main_benner{
+    margin: 0 auto;
+    position: relative;
+    margin-left: 20px;
+    height: 450px;
+    right: 20px;
+}
+.main_bg{
+    position: absolute;
+    display: block;
+    top: 20%;
+}
+
+.main-benner_nails{
+    position: absolute;
+    right: 10%; top: 45%;
+}
+.main-benner_nails img{
+    z-index: auto;
+    display: block; /* 이미지 사이 여백없애기 */
+}
+
+.main-benner_nails img:hover{
+    border: 1px solid #87490cff;
+}
+.main-benner_nails .b-2:hover .img-2{
+    z-index: 3;
+}
+
+
+/* 베스트상품 */
+.best-wrap{
+    width: 80%;
+    margin: auto;
+    padding: 30% 0 0 0;
+}
+.b-title{
+    width: 50%;
+    font-size: 2rem;
+    display: flex;
+    padding-bottom: 30px;
+}
+.inner-best{
+    width: 100%;
+}
+.product{
+    margin: 0 auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+}
+.product > a:nth-of-type(1){
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.product > a{
+    position: relative;
+}
+img{
+    display: block;
+}
+.hidden{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: none;
+}
+.product > a:hover div{
+    display: block;
+}
+
+
+/* recommend */
+.rec-wrap{
+    background: rgb(201, 201, 201);
+    margin-top: 20%;
+}
+.rec{
+    width: 950px;   
+    margin: 0 auto;
+    left: 30%;
+}
+.rec ul li{
+    display: inline-block;
+}
+.rec ul li a{
+    display: block;
+    width: auto;
+    margin: 5px;
+}
+.rec ul li div{
+    width: 300px;
+}
+
+.rec ul li .text{
+    display: none;
+    background: white;
+    line-height: 30px;
+    text-align: left;
+}
+
+.rec ul li a:hover .text{
+    display: block;
+}
+
+
+/* 하단 */
+.lower-wrap{
+    font-size: 0.8em;
+    height: 90px;
+    margin-top: 20%;
+    border-top: 1px solid #333;
+}
+.lower-wrap ul{
+    display: inline-block;
+    padding: 10px 40px 30px 300px;
+}
+.lower-wrap ul li{
+    line-height: 40px;
+}
+.lower-wrap img{
+    width: 200px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
