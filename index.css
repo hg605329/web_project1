@@ -73,7 +73,7 @@ ul, li{
 .category .submenu{
     display: none;
     background: white;
-    margin-top: 19px;
+    margin-top: 20px;
     font-size: 0.7em;
     text-align: left;
 }
@@ -120,6 +120,7 @@ ul, li{
 
 .search-txt{
     border: none;
+    border-bottom: 1px solid #333;
 }
 
 
@@ -143,29 +144,23 @@ ul, li{
     right: 10%; top: 45%;
 }
 .main-benner_nails img{
-    z-index: auto;
+    position: relative;
     display: block; /* 이미지 사이 여백없애기 */
 }
 
 .main-benner_nails img:hover{
-    border: 1px solid #87490cff;
-}
-.main-benner_nails .b-2:hover .img-2{
-    z-index: 3;
+    border: 2px solid #87490cff;
 }
 
 
 /* 베스트상품 */
 .best-wrap{
-    width: 80%;
-    margin: auto;
+    width: 100%;
     padding: 30% 0 0 0;
 }
-.b-title{
-    width: 50%;
-    font-size: 2rem;
-    display: flex;
-    padding-bottom: 30px;
+.best-wrap h2{
+    margin-left: 20%;
+    padding: 10px;
 }
 .inner-best{
     width: 100%;
