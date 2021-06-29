@@ -1,9 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
     color: inherit;
+    box-sizing: border-box;
 }
 
 ul, li{
@@ -11,16 +11,17 @@ ul, li{
 }
 
 #header{
+    z-index: 9999;
     background: white;
     position: fixed;
     top: 0; left: 0; right: 0;
     width: 100%;
     height: 90px;
-    z-index: 990;
 }
 
 #header .row{
-    padding: 30px 40px 0;
+    width: 100%;
+    padding: 30px 10px 0;
     text-align: center;
 }
 
@@ -72,7 +73,7 @@ ul, li{
 .category .submenu{
     display: none;
     background: white;
-    margin-top: 19px;
+    margin-top: 20px;
     font-size: 0.7em;
     text-align: left;
 }
@@ -116,16 +117,17 @@ ul, li{
     background: none;
     padding: 0;
 }
+
 .search-txt{
     border: none;
+    border-bottom: 1px solid #333;
 }
 
 
-
-
+/* 로그인 */
 .page-container{
-    width: 100vw;
-    height: 100vh;
+    width: 80vw;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,11 +139,12 @@ ul, li{
     display: flex;
 }
 
-.login-form-left-side{
+.login-side{
     border: 1px solid #000;
     display: flex;
     flex-direction: column;
     padding:40px;
+    margin: 0 10px 0 0;
 }
 
 .login-input-container{
@@ -161,7 +164,7 @@ ul, li{
     border: none;
     line-height: 45px;
     padding-left:10px;
-    width:267px;
+    width:300px;
 }
 
 
@@ -179,9 +182,33 @@ ul, li{
     background: black;
 }
 
-.login-form-right-side{
+
+/*  회원가입 */
+.sp-side{
     border: 1px solid #000;
     display: flex;
     flex-direction: column;
-    padding:40px;
+    align-items: left;
+    padding: 40px 40px 80px 20px;
 }
+.sp-top-wrap{
+    white-space: nowrap;
+}
+
+.sp-btn-wrap{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.sp-btn-wrap .login-btn{
+    width:180px;
+    height:35px;
+    color:black;
+    border: 0;
+    background: #ddd;
+}
+.sp-txt{
+    font-size: 0.5em;
+    line-height: 50px;
+}
+
