@@ -5,86 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="login.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
 </head>
 <body>
     <header id="header">
         <div class="row">
-         <a href="index.html">
-             <h1 class="logo">
-                <span class="logo-f">Mini Deco</span>
-            </h1>
-         </a>   
-            <div class="nav">
-                <div class="category">
-                    <div class="c-btn"><img src="img/카테고리.jpg" width="15px">
-                         <ul class="submenu">
-                             <li><a href="list.html">나무제품</a></li>
-                             <li><a href="">DIY미니어처</a></li>
-                             <li><a href="">룸박스/케이스</a></li>
-                             <li><a href="">금속제품/조명</a></li>
-                             <li><a href="">주방제품</a></li>
-                             <li><a href="">가구완제품</a></li>
-                             <li><a href="">소품류</a></li>
-                             <li><a href="">천/레이스</a></li>
-                             <li><a href="">벽지/기타재료</a></li>
-                             <li><a href="">핸드메이드</a></li>
-                         </ul>
-                     </div>    
-                </div>
+            <a href="index.html">
+                <h1 class="logo">
+                    Mini Deco
+                </h1>
+            </a>
+
+            <div class="category">
+                <img src="img/category.jpg" alt="">
+                <ul class="submenu">
+                    <li><a href="list.html">나무제품</a></li>
+                    <li><a href="">DIY미니어처</a></li>
+                    <li><a href="">룸박스/케이스</a></li>
+                    <li><a href="">금속제품/조명</a></li>
+                    <li><a href="">주방제품</a></li>
+                    <li><a href="">가구완제품</a></li>
+                    <li><a href="">소품류</a></li>
+                    <li><a href="">천/레이스</a></li>
+                    <li><a href="">벽지/기타재료</a></li>
+                    <li><a href="">핸드메이드</a></li>
+                </ul>
             </div>
+
             <div class="states">
                 <a href="login.html" class="log">로그인/회원가입</a>
                 <a href="cart.html">장바구니</a>
-                <a class="search-btn" href="#">
-                    <img src="img/검색.jpg" width="13px">
-                </a>
-                <input class="search-txt" type="text" name="" placeholder="">
+                <div class="search">
+                    <a class="search-btn" href="#">
+                        <img src="img/search.png"/>
+                    </a>
+                    <p class="search-txt">
+                        <input type="text" name="" placeholder="">
+                    </p>
+                </div>
             </div>
         </div>
     </header>
-    <div class="title">
-        <h3>로그인/회원가입</h3>
-    </div>
 
-        <div class="page-container">
-            <div class="login-form-container">              
-                <div class="login-side">
-                    <div>
-                        <h2>MEMBER<h2>
-                    </div>
-                    <div class="login-input-container">
-                        <div class="login-input-wrap input-id">
-                            <i class="far fa-envelope"></i>
-                            <input placeholder="ID" type="text">
-                        </div>
-                        <div class="login-input-wrap input-password">
-                            <i class="fas fa-key"></i>
-                            <input placeholder="PWD"  type="password">
-                        </div>
-                    </div>
-                    <div class="login-btn-wrap">
-                        <button type="button" class="login-btn">Login</button>
-                    </div>
+    <section>
+        <h1>로그인/회원가입</h1>
+
+        <figure>
+            <div class="login">
+                <h2>MEMBER</h2>
+                <ul>
+                    <li><input type="text" placeholder="ID" title="아이디입력"></li>
+                    <li><input type="password" placeholder="PWD" title="비밀번호입력"></li>
+                </ul>
+                <div class="onoff">
+                    SECURE
+                    <label class="switch-button">
+                        <input type="checkbox">
+                        <span class="onoff-switch"></span>
+                    </label>
                 </div>
-
-                <div class="sp-side">
-                    <div class="sp-top-wrap">
-                        <h2>SIGN UP<h2>
-                    <div class="sp-btn-wrap">
-                        <button class="login-btn">회원가입하기</button>
-                    </div>
-                    <div class="sp-txt">
-                        회원가입시 적립금 지급<br>
-                        회원전용 할인혜택을 놓치지 마세요!
-                    </div>
+                <button>LOGIN</button>
             </div>
+            <div class="sp">
+                <h2>SING UP</h2>
+                <ul>
+                    <li><button>회원가입하기</button></li>
+                    <li>회원가입시 적립금 지급</li>
+                    <li>회원전용 할인혜택을 놓치지 마세요!</li>
+                </ul>
+            </div>
+        </figure>
+    </section>
+
+    <footer>
+        <div>
+            <img src="img/logo.jpg" alt="">
+            <ul>
+                <li>공지사항</li>
+                <li>이용안내</li>
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+            </ul>
+            <ul>
+                <li>고객센터<br>
+                    010-6211-2216
+                </li>
+                <li>E-mail
+                    jongottan@naver.com
+                </li>
+            </ul>
+            <ul>
+                <li>계좌안내</li>
+                <li>국민 741-21-0211-800<br>
+                    예금주 [최종오]
+                </li>
+            </ul>
         </div>
-        
-
-                
-    
-
+    </footer>
 
 </body>
 </html>
