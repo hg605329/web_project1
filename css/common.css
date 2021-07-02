@@ -1,0 +1,146 @@
+@charset 'utf-8';
+@font-face {
+    font-family: apple;
+    src: url(../fonts/AppleSDGothicNeoEB.ttf);
+}
+html,body{margin:0; font-family: apple;}
+ul,li,ol{
+    list-style-type:none;
+    margin:0; 
+    padding:0;
+}
+h1,h2,h3,h4,h5,h6,figure,p{margin:0;}
+img{vertical-align: top;}
+a{text-decoration: none;}
+
+*{ 
+    box-sizing: border-box;
+    font-size:16px;
+    color:#555;
+}
+
+
+/* header */
+#header{
+    z-index: 9999;
+    background: white;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    width: 100%;
+}
+
+.row{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0 ;
+    text-align: center;
+}
+
+#header .logo{
+    margin: 0 auto;
+}
+
+.row .logo{
+    display: inline-block;
+    width: 230px;
+    height: 50px;
+    background: url('../img/logo.jpg') 0 0 no-repeat;
+    background-size: 230px;
+    font-size:0;
+}
+
+/* 왼쪽 카테고리 */
+#header .category{
+    position: absolute;
+    top: 50%;left: 0px;
+    transform: translateY(-50%);
+}
+
+.category .submenu{
+    width: 150px;
+    position: absolute;
+    top: 0; left: 0;
+    display: none;
+    background: white;
+    margin-top: 20px;
+    font-size: 0.7em;
+    text-align: left;
+}
+
+.category .submenu a{
+    display: block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.category .submenu a:hover{
+    color: white;
+    background: #87490cff;
+    transition: all 0.3s;
+}
+
+.category:hover .submenu{
+    display: block;
+}
+
+
+
+/* 오른쪽 메뉴 */
+#header .states{
+    position: absolute;
+    top: 50%; right: 0px;
+    transform: translateY(-40%);
+    display:flex;
+}
+
+#header .states a{
+    position: relative;
+    display: inline-block;
+    margin-left: 24px;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #333;
+    background: none;
+    padding: 0;
+}
+.search{
+    position:relative;
+}
+.search .search-btn img{
+    width: 30px;
+}
+.search .search-btn:hover + .search-txt{display:block;}
+
+.search-txt{
+    border: 1px solid #87490cff;
+    display:none;
+    position:absolute;
+    right:0; top: 30px;
+    background:#87490cff;
+    padding: 2px;
+}
+.search-txt input{
+    border: none;
+}
+
+/* footer메뉴 */
+footer{
+    font-size: 0.8em;
+    margin-top: 10%;
+    padding:3% 0;
+    border-top: 1px solid #333;
+}
+footer > div{
+    width:80%; margin:0 auto;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer ul{}
+footer ul li{
+    line-height: 40px;
+}
+footer img{
+    width: 200px;
+}
