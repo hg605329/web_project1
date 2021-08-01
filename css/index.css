@@ -7,6 +7,7 @@ main{padding-top:110px;}
     position: relative;
     height: 30vw;
 }
+
 .slide figure{
     position: absolute;
     display: block;
@@ -15,21 +16,53 @@ main{padding-top:110px;}
 }
 .slide figure img{width:100%;}
 
-.slide figure figcaption{
-    z-index: 2;
-    width: 27%; height: 90%;
+.slide figure .fig-1{
+    width: 25%; height: 80%;
     color: #333;
     background: rgba(255, 255, 255, 0.5);
     position: absolute;
     left: 10%; top: 5%;
-    font-size: 4.5rem;
+    font-size: 3rem;
     line-height: 1.5em;
     padding: 0 0 0 20px;
 }
-.slide figure figcaption span{
-    font-size: 2.5rem;
+.slide figure .fig-1 span{
+    font-size: 2rem;
     color: #333;
 }
+.slide figure .fig-2{
+    color: red;
+    position: absolute;
+    left: 20%; top: 20%;
+    font-size: 4rem;
+}
+.slide figure .fig-2 span{
+    line-height: 1em;
+    color: #333;
+    font-size: 1.5rem;
+}
+.slide figure .fig-3{
+    line-height: 62px;
+    position: absolute;
+    top: 10%; right: 25%;
+    font-size: 4em;
+}
+
+.slide figure .fig-3 a{
+    font-size: .5em;
+}
+
+.slide figure .fig-3 span{
+    line-height: 1px;
+    font-size: .5em;
+}
+.slide figure .fig-3 span small{
+    line-height: 1px;
+    font-size: .5em;
+}
+
+
+
 .main-benner_nails{
     position: absolute;
     right: 10%; top: 50%;
@@ -39,15 +72,15 @@ main{padding-top:110px;}
     padding:0px 30px;
     width: 12%;
 }
-.main-benner_nails li{}
 .main-benner_nails li a{
-    font-size:1.5rem;
+    font-size:o.5rem;
     padding: 30px 0;
     display:block;
     word-break: keep-all;
 }
 
 .main-benner_nails li a:hover{
+    border-bottom: 3px solid #87490cff;
     color:#87490cff;
 }
 
@@ -82,6 +115,7 @@ main{padding-top:110px;}
 .product > figure img{
     width:100%;
 }
+
 .product > figure> a > span{
     width: 50px; height: 50px;
     color: #fff;
