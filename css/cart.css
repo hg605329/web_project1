@@ -1,10 +1,74 @@
 /* 장바구니 */
-.list-wrap{
-    border: 0;
-    border-bottom: 1px solid #333;
-    width: 60%;
-    padding:0 0 15px 0;
+section{
+    width: 80%;
+    padding: 10% 0;
     margin: 0 auto;
-    margin-top: 7%;
-    position: relative;
+    
+}
+section img{
+    width: 18px;
+}
+section h1{
+    width: 80%;
+    margin: 0 auto;
+    color: #222;
+    border-bottom: 1.5px solid #888;
+}
+section .check{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: .8em;
+}
+.row-data{
+    display: flex;
+    width: 80%; height: 100px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+
+}
+.row-data .check2{
+    padding: 40px 0;
+}
+.row-data img{
+    padding: 10px 0;
+    width: 80px;
+}
+.row-data .mid-info{
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    font-size: .5em;
+}
+.row-data .mid-info div {
+    height: 50%;
+    padding: 10px;
+}
+.row-data .mid-info .name {
+    border-bottom: 1px solid #ddd;
+}
+.row-data .name .box{
+    border: 1px solid #888;
+    width: 15px; height: 15px;
+    float: right;
+    padding: 0;
+    text-align: center;
+    font-size: 13px;
+}
+.row-data .price{
+    display: flex;
+    border-left: 1px solid #ddd;
+    align-items: center;
+    padding: 0 20px;
+}
+.option span{
+    font-size: 0.8em;
+    color: #87490cff;
+    padding: 0 10px 0 0;
+}
+.option input{
+    width: 50px; height: 18px;
+    margin-left: 20%;
 }
