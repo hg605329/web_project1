@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <meta property="og:title" content="Mini Deco">
+
+    <meta property="og:title" content="Mini Deco">
     <meta property="og:url" content="https://hg605329.github.io/web_project1/">
     <meta property="og:image" content="img/Thumbnail.jpg">
     <meta property="og:description" content="DIY 미니어처를 구매할 수 있습니다.">
@@ -18,10 +18,14 @@
     <meta name="twitter:description" content="DIY 미니어처를 구매할 수 있습니다.">
 
     <link rel="shortcut icon" href="img/favicon-16x16.png">
-
     <link rel="apple-touch-icon-precomposed" sizes="114*114" rel="img/favicon-16x16.png">
     <title>Mini Deco</title>
     <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/index.js"></script>
+
 </head>
 
 <body>
@@ -48,7 +52,6 @@
                     <li><a href="">핸드메이드</a></li>
                 </ul>
             </div>
-
             <div class="states">
                 <a href="login.html" class="log">로그인/회원가입</a>
                 <a href="cart.html">장바구니</a>
@@ -67,19 +70,19 @@
         <div class="main_benner">
             <ul class="main-benner_nails">
                 <li>
-                    <a href="#">미니어쳐 가구 할인전</a>
+                    <a href="#">미니어쳐 가구<br>할인전</a>
                 <li>
-                    <a href="#">회원 가입시 적립금 지급</a>
+                    <a href="#">회원 가입시<br>적립금 지급</a>
                 </li>
                 <li>
-                    <a href="#">「미니어쳐 DIY 작은세상가구」<small>책출간</small></a>
+                    <a href="#">「미니어쳐 DIY 작은세상가구」<br>책출간</a>
                 </li>
             </ul>
             <div class="slide">
                 <figure>
                     <a href="#">
-                        <img src="img/benner3.jpg" alt="">
-                        <figcaption>
+                        <img src="img/benner1.jpg" alt="">
+                        <figcaption class="fig-1">
                             <span>미니어쳐</span><br>
                             가구 할인전<br>
                             기간한정 세일<br>
@@ -88,14 +91,50 @@
                     </a>
                 </figure>
                 <figure>
-                    <a href=""><img src="img/benner2.jpg" alt=""></a>
+                    <a href="#"><img src="img/benner2.jpg" alt="">
+                        <figcaption class="fig-2">
+                                신규회원<br>
+                                가입시 혜택!<br>
+                                <span>
+                                    회원가입만 해도 바로 사용가능한
+                                    적립금 지급
+                                </span>
+                        </figcaption>
+                    </a>
                 </figure>
                 <figure>
-                    <a href=""><img src="img/benner1.jpg" alt=""></a>
+                    <a href="#"><img src="img/benner3.jpg" alt="">
+                        <figcaption class="fig-3">
+                                <a>「미니어쳐 DIY</a><br>
+                                작은세상<br>
+                                작은가구」<br>
+                                <span>
+                                    책출간<br>
+                                    <small>
+                                        쉽게만드는 가구 베스트 아이템<br>
+                                        어른의 인형놀이에 필요한 인형 가구를
+                                        만드는 방법을 알려드립니다.
+                                    </small>
+                            </span>
+                        </figcaption>
+                    </a>
                 </figure>
             </div>
-            
 
+            <script>
+
+                $(".slide").slick({
+                  arrows:false,
+                  dots: true,
+                  infinite: true,
+                  slidesToShow: 1, //화면에 몇장씩 보여주게 하는지
+                  slidesToScroll: 1, //몇 칸씩 움직이게 하는지
+                  autoplay: true,
+                  autoplaySpeed: 1000,
+                  fade: true,
+                  cssEase: 'linear'
+                });
+           </script>
         </div>
 
         <section class="best-wrap">
@@ -104,9 +143,8 @@
             <div class="product">
                 <figure>
                     <a href="#">
-                        <img src="img/best1.jpg">
-                        <span>1<br><small>BEST</small></span>
                         <figcaption>DIY 콘솔 뷔페장<br>18,000원</figcaption>
+                        <img src="img/best1.jpg">
                     </a>
                 </figure>
 
@@ -114,28 +152,24 @@
                 <figure>
                     <a href="#">
                         <img src="img/best2.jpg" alt="">
-                        <span>2</span>
                         <figcaption>DIY 우드 선반장<br>10,000원</figcaption>
                     </a>
                 </figure>
                 <figure>
                     <a href="#">
                         <img src="img/best3.jpg" alt="">
-                        <span>3</span>
                         <figcaption>꽃하트<br>6,500원</figcaption>
                     </a>
                 </figure>
                 <figure>
                     <a href="#">
                         <img src="img/best4.jpg" alt="">
-                        <span>4</span>
                         <figcaption>DIY 15칸 서랍장<br>18,720원</figcaption>
                     </a>
                 </figure>
                 <figure>
                     <a href="#">
                         <img src="img/best5.jpg" alt="">
-                        <span>5</span>
                         <figcaption>DIY 요모조모 장식장<br>11,520원</figcaption>
                     </a>
                 </figure>
