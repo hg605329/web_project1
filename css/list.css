@@ -1,0 +1,57 @@
+/* 리스트 */
+
+/* list header */
+.list-header{
+  width: 60%;
+  padding:0 0 15px 0;
+  margin: 0 auto;
+  margin-top: 10%;
+  position: relative;
+}
+.list-header h3{
+  border-bottom: 1px solid #333;
+}
+.list-option{
+  float: right;
+}
+.list-option button{
+  padding: 5px 10px;
+  font-size: 0.8em;
+  margin: 15px 5px;
+}
+
+/* list main */
+.list-main{
+  width: 80%;
+  margin-left: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.list-main .items{
+  width: 80%;
+  padding-top: 10px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-main ul li {
+  width: 30%;
+  margin-bottom: 5%;
+}
+
+.list-main ul li figure {
+  width: 80%;
+}
+
+.list-main ul li figure img {
+  width: 100%;
+}
+
+.list-main ul li figure span {
+  width: 100%;
+  margin-top: 7%;
+  text-align: center;
+  align-content: center;
+}
