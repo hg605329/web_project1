@@ -151,7 +151,7 @@ a {
 /* footer메뉴 */
 footer {
   font-size: 0.8em;
-  margin-top: 15%;
+  margin-top: 20%;
   padding: 3% 0;
   border-top: 1px solid #333;
 }
@@ -242,6 +242,7 @@ footer img {
   .rec h2 {
     font-size: 2.6em;
   }
+  .cart-header{margin-top: 20%;}
 }
 @media (max-width: 880px) {
   .list-option {
@@ -345,6 +346,11 @@ footer img {
   .sp ul li {
     font-size: 0.8em;
   }
+  .list-main h4{font-size: 10px;}
+  footer img {
+    display: none;
+  }
+  footer{margin: 0;}
 }
 
 @media (max-width: 673px) {
@@ -380,11 +386,10 @@ footer img {
   .slide figure .fig-3 span small {
     font-size: 0.7em;
   }
-  footer img {
-    display: none;
-  }
+
   .list-header {
     width: 70%;
+    margin-top: 30%;
   }
 }
 
@@ -399,7 +404,6 @@ footer img {
     display: none;
   }
   .slide figure .fig-1 {
-    font-size: 0.2em;
     width: 27%;
     height: 90%;
   }
@@ -428,4 +432,12 @@ footer img {
   section {
     width: 100%;
   }
+  .list-option button{
+    padding: 2px 7px;
+    font-size: 0.2em;
+    margin: 10px 0px;
+  }
+}
+@media (max-width: 360px) {
+
 }
