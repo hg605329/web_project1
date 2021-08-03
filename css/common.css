@@ -399,6 +399,7 @@ footer img {
     display: none;
   }
   .slide figure .fig-1 {
+    font-size: 0.2em;
     width: 27%;
     height: 90%;
   }
